@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="tienda de bebidas alcoholicas, promociones, bebidas importadas y nacionales">
+  <meta name="keywords"  content="vinos, whiskys,licores,gin,vodka,aguas tonicas, gaseosas, cervezas">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>Carpinchos - Carpincholandia</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <h1>Carpincholandia</h1>
+      <h2 class="titulo-responsive">Tienda de Carpinchos</h2>
+    </div>
+    <button class="btn-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="productos.html">Carpinchos</a></li>
+      <li><a href="promos.html">Promos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+
+<section class="contenido">
+  <h2 class="titulo-prod">¡NUESTRA VARIEDAD DE Carpinchos!</h2>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="../images/carpincho1.jpg" alt="Fernet Branca">
+          <div class="card-body">
+            <h4 class="card-title">Carpincho piromaniaco</h4>
+            <p class="card-text">$1000.00</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="../images/carpincho3.jpg" alt="Jaggermeister">
+          <div class="card-body">
+            <h4 class="card-title">Carpincho Trajeado</h4><br><br>
+            <p class="card-text">$1700.00</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="../images/carpincho4.jpg" alt="Tanqueray">
+          <div class="card-body">
+            <h4 class="card-title">Carpincho Cumbiero</h4><br><br>
+            <p class="card-text">$1900.00</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="../images/carpincho5.jpg" alt="Bombay">
+          <div class="card-body">
+            <h4 class="card-title">Carpincho 2da para tomar mates</h4>
+            <p class="card-text">$1500.00</p> 
+            <a href="#" class="btn btn-primary">Agregar al carrito</a> 
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="../images/carpincho6.jpg" alt="Beefeater">
+          <div class="card-body">
+            <h4 class="card-title">ATR Carpincho Malvado</h4><br><br><br>
+            <p class="card-text">$2200.00</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="../images/carpincho7.jpg" alt="Los arboles Vino">
+          <div class="card-body">
+            <h4 class="card-title">Carpincho Bostero</h4><br><br><br>
+            <p class="card-text">$2440.00</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div> 
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="indexFooter">
+    <h2 class="simil-titulo">Carpincholandia - Tienda de Carpinchos</h2>
+    <h3 class="subtitulos">Av. Siempre Viva 742</h3>
+    <h3 class="subtitulos">Lunes a Miercoles de 10-20HS Jueves a Sabados de 10-21HS</h3>
+    <h3 class="subtitulos">Telefono: 00000000</h3>
+    <h3 class="subtitulos">Whatsapp: 11-1111-1111</h3>
+  </footer>
+
+</section>
+<!-- JAVASCRIPT PARA EL MENU -->
+
+<script>var menuUL = document.getElementsByTagName("ul");
+var heightOful = menuUL[0].scrollHeight;
+var btnToggle = document.getElementsByClassName("btn-toggle");
+btnToggle[0].addEventListener("click",function(){
+  if(menuUL[0].style.maxHeight){
+    menuUL[0].style.maxHeight = null;
+  }
+  else{
+    menuUL[0].style.maxHeight = menuUL[0].scrollHeight + "px";
+  }
+});
+</script>
+
+</body>
+</html>
+
+

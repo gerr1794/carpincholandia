@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title>Login - Carpincholandia</title>
+	<link rel="stylesheet" href="../css/estilos.css" />   
+</head>
+<body>
+
+	<nav>
+		<div class="logo">
+			<h1>Carpincholandia</h1>
+			<h2 class="titulo-responsive">Tienda de Carpinchos</h2>
+		</div>
+		<button class="btn-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<ul>
+			<li><a href="../index.html">Inicio</a></li>
+			<li><a href="productos.html">Carpinchos</a></li>
+			<li><a href="promos.html">Promos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="login.html">Login</a></li>
+		</ul>
+	</nav>
+
+
+<section class="contenido">	
+	<div class="contenedor">
+		<h2>LOGIN</h2>
+		<form id="forma" name="forma" method="POST">
+			
+			<div class="elemento">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" placeholder="Nombre"><br><br>
+			</div>
+			<div class="elemento">
+				<label for="apellido">Apellido:</label>
+				<input type="text" id="apellido" name="apellido" placeholder="Apellido"><br><br>
+			</div>
+			<div class="elemento">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+			</div>
+			<div class="elemento">
+				<label for="contraseña">Contraseña:</label>
+				<input type="password" id="contraseña" name="contraseña"><br><br>
+			</div>
+			<div class="elemento">
+				<input type="submit" value="Registrarse"/>
+			</div>
+			
+		</form>
+	</div>
+
+	<footer class="indexFooter">
+		
+		<h2 class="simil-titulo">Carpincholandia - Tienda de Carpinchos</h2>
+		<h3 class="subtitulos">Av. Siempre Viva 742</h3>
+		<h3 class="subtitulos">Lunes a Miercoles de 10-20HS Jueves a Sabados de 10-21HS</h3>
+		<h3 class="subtitulos">Telefono: 00000000</h3>
+		<h3 class="subtitulos">Whatsapp: 11-1111-1111</h3>
+		
+	</footer>
+</section>
+
+<!-- JAVASCRIPT PARA EL MENU -->
+
+<script>var menuUL = document.getElementsByTagName("ul");
+var heightOful = menuUL[0].scrollHeight;
+var btnToggle = document.getElementsByClassName("btn-toggle");
+btnToggle[0].addEventListener("click",function(){
+	if(menuUL[0].style.maxHeight){
+		menuUL[0].style.maxHeight = null;
+	}
+	else{
+		menuUL[0].style.maxHeight = menuUL[0].scrollHeight + "px";
+	}
+});
+</script>
+
+</body>
+</html>
